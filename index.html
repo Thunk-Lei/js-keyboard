@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>keyboard</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" />
+    <link rel="stylesheet" href="./keyboard.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="keyboard-show-text"></div>
+      <div class="keyboard-box"></div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./keyboard.js"></script>
+    <script type="text/javascript">
+      $('.keyboard-box').KeyBoard({
+        random: true, // 随机键盘
+        type: 'password', // 密码 password or 金额 money
+        show: $('.keyboard-show-text'), // 展示区域
+        safe: false // 加密显示
+      })
+    </script>
+  </body>
+</html>
